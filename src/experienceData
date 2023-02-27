@@ -1,0 +1,56 @@
+const experienceData = [
+  {
+    id: 1,
+    jobTitle: "Software Engineer",
+    company: "ABC Corp",
+    location: "San Francisco, CA",
+    duration: "Jan 2019 - Present",
+    responsibilities: [
+      "Developed and maintained React-based web applications",
+      "Integrated Firebase authentication and Firestore database",
+      "Implemented server-side rendering using Node.js and Express"
+    ],
+    projects: [
+      {
+        id: 1,
+        title: "Project 1",
+        techStack: ["React", "Firebase", "Node.js"],
+        link: "https://example.com/project1"
+      },
+      {
+        id: 2,
+        title: "Project 2",
+        techStack: ["React", "PostgreSQL", "Node.js"],
+        link: "https://example.com/project2"
+      }
+    ]
+  },
+  {
+    id: 2,
+    jobTitle: "Front-End Developer",
+    company: "XYZ Corp",
+    location: "New York, NY",
+    duration: "Jun 2017 - Dec 2018",
+    responsibilities: [
+      "Built responsive and user-friendly web pages using HTML, CSS, and JavaScript",
+      "Collaborated with designers and back-end developers to ensure seamless integration",
+      "Optimized website performance and accessibility"
+    ],
+    projects: [
+      {
+        id: 1,
+        title: "Project 1",
+        techStack: ["React", "Redux", "Bootstrap"],
+        link: "https://example.com/project1"
+      },
+      {
+        id: 2,
+        title: "Project 2",
+        techStack: ["React", "Webpack", "Babel"],
+        link: "https://example.com/project2"
+      }
+    ]
+  }
+];
+
+export default experienceData;

@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/hipstermartin/hipstermartin.github.io/static/css/main.501a6809.css",
+    "main.js": "/hipstermartin/hipstermartin.github.io/static/js/main.ac0398e0.js",
+    "static/media/self-portrait.png": "/hipstermartin/hipstermartin.github.io/static/media/self-portrait.7fffac8b572a4ec04429.png",
+    "index.html": "/hipstermartin/hipstermartin.github.io/index.html",
+    "main.501a6809.css.map": "/hipstermartin/hipstermartin.github.io/static/css/main.501a6809.css.map",
+    "main.ac0398e0.js.map": "/hipstermartin/hipstermartin.github.io/static/js/main.ac0398e0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.501a6809.css",
+    "static/js/main.ac0398e0.js"
+  ]
+}

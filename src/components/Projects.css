@@ -1,0 +1,217 @@
+/* Set font family and size */
+body {
+font-family: Arial, sans-serif;
+font-size: 16px;
+background-color: #36454F;
+}
+
+/* Center the Projects section */
+#projects {
+margin: 0 auto;
+max-width: 800px;
+color: #fff;
+}
+
+/* Style the Projects section heading */
+#projects h2 {
+text-align: center;
+font-size: 2rem;
+margin-top: 3rem;
+color: #fff;
+}
+
+/* Style the Projects section description */
+#projects p {
+text-align: center;
+font-size: 1.2rem;
+margin-bottom: 3rem;
+color: #fff;
+}
+
+/* Style the project cards */
+#projects ul {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+#projects ul li {
+flex: 0 1 300px;
+margin: 10px;
+padding: 20px;
+border: 1px solid #36454F;
+border-radius: 5px;
+text-align: center;
+}  
+
+#projects li {
+width: 30%;
+margin-bottom: 2rem;
+background-color: #36454F;
+border-radius: 10px;
+box-shadow: 0 0 1.5px #fff;
+transition: all 0.3s ease;
+cursor: pointer;
+}
+
+#projects ul li a {
+display: inline-block;
+margin: 10px;
+}
+
+/* Hover effect on project cards */
+#projects li:hover {
+transform: translateY(-5px);
+box-shadow: 0 10px 20px #fff;
+}
+
+/* Style the project card content */
+#projects li h3 {
+font-size: 1.2rem;
+margin: 1rem;
+color: #fff;
+}
+
+#projects li p {
+font-size: 1rem;
+margin: 0.5rem 1rem;
+color: #fff;
+}
+
+/* Style the filter section */
+#filter-section {
+margin-top: 3rem;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+#filter-section label {
+font-size: 1.2rem;
+margin-right: 1rem;
+color: #fff;
+}
+
+#filter-section input[type="checkbox"] {
+margin-right: 0.5rem;
+transform: scale(1.5);
+}
+
+/* Style the active filter tags */
+#active-filters {
+display: flex;
+flex-wrap: wrap;
+margin-top: 1rem;
+}
+
+#active-filters span {
+background-color: #fff;
+color: #36454F;
+padding: 0.5rem;
+margin-right: 0.5rem;
+margin-bottom: 0.5rem;
+border-radius: 10px;
+font-size: 0.8rem;
+}
+
+/* Style the reset button */
+#reset-filters {
+background-color: #fff;
+color: #36454F;
+padding: 0.5rem 1rem;
+border-radius: 10px;
+font-size: 1rem;
+cursor: pointer;
+transition: all 0.3s ease;
+}
+
+#reset-filters:hover {
+background-color: #36454F;
+color: #fff;
+border: 1px solid #fff;
+}
+
+/* Style the link to GitHub */
+a.github-link {
+display: block;
+margin: 1rem;
+}
+
+a.github-link img {
+height: 32px;
+width: 32px;
+}
+/* Styling for the filter checkboxes */
+.filter-container {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+margin-bottom: 20px;
+}
+
+.filter-container label {
+display: inline-block;
+position: relative;
+padding-left: 30px;
+margin-right: 10px;
+margin-bottom: 10px;
+font-size: 18px;
+cursor: pointer;
+}
+
+.filter-container input {
+position: absolute;
+opacity: 0;
+cursor: pointer;
+}
+
+.checkmark {
+position: absolute;
+top: 0;
+left: 0;
+height: 20px;
+width: 20px;
+border: 2px solid #aaa;
+border-radius: 4px;
+}
+
+.checkmark:after {
+content: "";
+position: absolute;
+display: none;
+}
+
+.filter-container input:checked ~ .checkmark:after {
+display: block;
+}
+
+.filter-container .checkmark:after {
+left: 6px;
+top: 2px;
+width: 4px;
+height: 8px;
+border: solid #36454F;
+border-width: 0 2px 2px 0;
+transform: rotate(45deg);
+}
+
+/* Styling for the "Apply Filters" button */
+#apply-filters {
+display: block;
+margin: 0 auto;
+padding: 10px 20px;
+background-color: #ffc000;
+color: #36454F;
+font-size: 16px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+#apply-filters:hover {
+background-color: #2980b9;
+}

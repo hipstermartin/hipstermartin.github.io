@@ -1,0 +1,90 @@
+/* Set font family and size */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #36454F;
+    }
+
+    /* Set background color for section */
+#about {
+background-color: #36454F;
+color: #fff;
+width:fit-content;
+}
+
+.portrait {
+border-radius: 50%;
+width: 200px;
+height: 200px;
+transition: transform 0.3s ease-in-out;
+}
+
+.portrait:hover {
+transform: scale(1.1);
+}
+
+.self-portrait img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+/* Style intro */
+.intro {
+line-height: 1.5;
+}
+
+.intro p {
+margin-bottom: 20px;
+}
+
+/* Style links */
+.links {
+display: flex;
+}
+
+.links a {
+text-decoration: none;
+margin: 0 10px;
+transition: all 0.3s ease-in-out;
+}
+
+.links a:hover {
+transform: scale(1.2);
+}
+
+/* Style degrees */
+.degree {
+margin-bottom: 20px;
+}
+
+.degree h3 {
+cursor: pointer;
+color: #fff;
+margin-bottom: 10px;
+transition: all 0.3s ease-in-out;
+}
+
+.degree h3:hover {
+color: #ffc000;
+}
+
+.details {
+margin-left: 20px;
+padding-left: 20px;
+border-left: 2px solid #ffc000;
+}
+
+.details p {
+margin-bottom: 10px;
+}
+
+.details ul {
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+.details ul li {
+margin-bottom: 5px;
+}

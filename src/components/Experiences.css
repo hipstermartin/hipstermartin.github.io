@@ -1,0 +1,150 @@
+/* Experiences.css */
+
+/* Styling for the entire Experiences component */
+.experiences {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+/* Styling for the timeline */
+.timeline {
+display: flex;
+flex-direction: column;
+align-items: center;
+position: relative;
+}
+
+/* Styling for the line in the timeline */
+.timeline::before {
+content: "";
+position: absolute;
+top: 0;
+left: 50%;
+transform: translateX(-50%);
+width: 2px;
+height: 100%;
+background-color: #ffc000;
+}
+
+/* Styling for each job in the timeline */
+.job {
+position: relative;
+width: 400px;
+padding: 20px;
+margin: 20px 0;
+border-radius: 5px;
+box-shadow: 0 0 1.5px #fff;
+background-color: #36454F;
+cursor: pointer;
+}
+
+/* Styling for the job title */
+.job-title {
+font-size: 20px;
+font-weight: bold;
+margin-bottom: 10px;
+color: #fff;
+}
+
+/* Styling for the job company */
+.job-company {
+font-size: 15px;
+margin-bottom: 10px;
+color: #fff;
+}
+
+/* Styling for the job location */
+.job-location {
+font-size: 16px;
+margin-bottom: 10px;
+color: #fff;
+}
+
+/* Styling for the job duration */
+.job-duration {
+position: absolute;
+top: 0;
+left: -150px;
+font-size: 15px;
+font-weight: bold;
+color: #fff;
+}
+
+/* Styling for the selected job */
+.selected {
+background-color: #36454F;
+}
+
+/* Styling for the job duties */
+.job-duties {
+margin-top: 10px;
+padding-left: 20px;
+list-style: none;
+font-size: 16px;
+color: #fff;
+}
+
+/* Animation for the timeline */
+.timeline::before {
+animation: move-line 2s ease-in-out;
+}
+
+@keyframes move-line {
+0% {
+height: 0;
+}
+100% {
+height: 100%;
+}
+}
+
+/* Animation for the job duties */
+.job-duties {
+animation: slide-down 0.5s ease-in-out;
+}
+
+@keyframes slide-down {
+0% {
+transform: translateY(-10px);
+opacity: 0;
+}
+100% {
+transform: translateY(0);
+opacity: 1;
+}
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+.timeline::before {
+left: 30px;
+transform: none;
+}
+
+.job {
+width: 90%;
+}
+
+.job-duration {
+left: 0;
+}
+}
+
+@media (max-width: 480px) {
+.job-title {
+font-size: 20px;
+}
+
+.job-company {
+font-size: 16px;
+}
+
+.job-location {
+font-size: 14px;
+}
+
+.job-duties {
+font-size: 14px;
+}
+}

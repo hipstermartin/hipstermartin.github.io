@@ -1,0 +1,74 @@
+body {
+  background-color: #36454F;
+}
+
+.App {
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #36454F;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  animation: fade-in 1s ease-out;
+  background-color: #36454F;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+}
+
+nav li:hover {
+  color: #ffc000;
+  animation: shake 0.5s;
+}
+
+nav li.active {
+  color: #ffc000;
+}
+
+.scroll-container {
+  height: 100vh;
+  overflow: auto;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
