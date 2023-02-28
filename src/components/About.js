@@ -67,10 +67,10 @@ function About() {
         <div className="intro">
           <p>Welcome to my corner of the internet! My name is Abhinav. I'm a computer science graduate who is passionate about science and technology, and nothing makes me happier than working on data science projects/research. I'm always looking for new challenges, and I'm a quick learner, so don't worry, I'll get the job done! I'm also pretty laid-back in my approach, and I'm always up for a good laugh - so if you're looking for someone to add some fun to the team, I'm your guy!</p>
           <div className="links">
-            <a href="https://www.linkedin.com/in/your-linkedin-profile">
+            <a href="https://www.linkedin.com/in/abhinavyalamaddi/">
               <FaLinkedin size={32} color="#fff" />
             </a>
-            <a href="https://github.com/your-github-profile">
+            <a href="https://github.com/hipstermartin">
               <FaGithub size={32} color="#fff" />
             </a>
           </div>
