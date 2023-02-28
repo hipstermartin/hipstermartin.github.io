@@ -20,16 +20,16 @@ const degrees = [
       "Jonsson School Dean’s Graduate Scholarship Recipient, 2022",
     ],
   },
-  {
-    university: "CodePath (Bootcamp)",
-    degree: "Certificate in Intermediate iOS Development",
-    coursework: [
-      "View and View Controllers, REST APIs, Camera and MapKit, Parse/Back4App, Animation and Gestures, Wireframes/Schemas, CRUD, Debugging in Xcode"
-    ],
-    achievements: [
-      "Completed the Certificate in Intermediate iOS Development by Codepath, demonstrating proficiency in developing iOS applications using Swift programming language",
-    ],
-  },
+  // {
+  //   university: "CodePath (Bootcamp)",
+  //   degree: "Certificate in Intermediate iOS Development",
+  //   coursework: [
+  //     "View and View Controllers, REST APIs, Camera and MapKit, Parse/Back4App, Animation and Gestures, Wireframes/Schemas, CRUD, Debugging in Xcode"
+  //   ],
+  //   achievements: [
+  //     "Completed the Certificate in Intermediate iOS Development by Codepath, demonstrating proficiency in developing iOS applications using Swift programming language",
+  //   ],
+  // },
   {
     university: "Vellore Institute of Technology",
     degree: "Master of Technology in Software Engineering",
