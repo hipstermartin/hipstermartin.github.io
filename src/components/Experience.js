@@ -4,6 +4,16 @@ import "./Experiences.css";
 const experiences = [
   {
     id: 1,
+    jobTitle: "Intelligent Application Developer",
+    company: "Naveen Jindal School of Management",
+    location: "The University of Texas at Dallas",
+    duration: "Apr 2023 - Present",
+    duties: [
+      "Working on developing a full-stack web application that visualizes AHP and linear programming. Also involved in multiple IoT/ML projects that leverage the use of various AWS services.",
+    ],
+  },
+  {
+    id: 2,
     jobTitle: "Volunteer Research Assistant",
     company: "ArtSciLab",
     location: "The University of Texas at Dallas",
@@ -11,17 +21,6 @@ const experiences = [
     duties: [
       "Working under Dr. Roger Malina, responsible for conducting various research activities, analyzing data sets, and developing machine learning models.",
       "Research Area: Text and Video Analysis",
-    ],
-  },
-  {
-    id: 2,
-    jobTitle: "Graduate Research Experience",
-    company: "HBS lab",
-    location: "The University of Texas at Dallas",
-    duration: "Jan 2023 - Present",
-    duties: [
-      "Currently volunteering with Dr. Yonas Tadesse’s Humanoid Biorobotics and Smart Systems (HBS) lab, gaining valuable experience in Speech Emotion Recognition and Synthesis while collaborating with several projects.",
-      "Research Area: Speech Recognition and Synthesis",
     ],
   },
   {
