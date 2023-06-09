@@ -4,23 +4,22 @@ import "./Experiences.css";
 const experiences = [
   {
     id: 1,
-    jobTitle: "Intelligent Application Developer",
-    company: "Naveen Jindal School of Management",
-    location: "The University of Texas at Dallas",
-    duration: "Apr 2023 - Present",
+    jobTitle: "Software Engineering Intern",
+    company: "Copart Inc",
+    location: "Dallas, Texas",
+    duration: "Jun 2023 - Present",
     duties: [
-      "Working on developing a full-stack web application that visualizes AHP and linear programming. Also involved in multiple IoT/ML projects that leverage the use of various AWS services.",
+      "",
     ],
   },
   {
     id: 2,
-    jobTitle: "Volunteer Research Assistant",
-    company: "ArtSciLab",
+    jobTitle: "Intelligent Application Developer",
+    company: "Naveen Jindal School of Management",
     location: "The University of Texas at Dallas",
-    duration: "Feb 2023 - Present",
+    duration: "Apr 2023 - Jun 2023",
     duties: [
-      "Working under Dr. Roger Malina, responsible for conducting various research activities, analyzing data sets, and developing machine learning models.",
-      "Research Area: Text and Video Analysis",
+      "Working on developing a full-stack web application that visualizes AHP and linear programming. Also involved in multiple IoT/ML projects that leverage the use of various AWS services.",
     ],
   },
   {
