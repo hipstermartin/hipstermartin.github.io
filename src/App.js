@@ -57,13 +57,13 @@ function App() {
           >
             Projects
           </li>
-          <li
+          {/* <li
             id="research-nav"
             className={activeNav === "research-nav" ? "active" : ""}
             onClick={() => handleNavClick("research-nav", "research")}
           >
             Research
-          </li>
+          </li> */}
         </ul>
       </nav>
       {pageContent}
