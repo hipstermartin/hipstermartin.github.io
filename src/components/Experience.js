@@ -1,22 +1,29 @@
 import React, { useState } from "react";
 import "./Experiences.css";
+import CopartLogo from "../images/copart-logo.png";
+import UTDLogo from "../images/utd-logo.png";
+import NetAppLogo from "../images/netapp-logo.png";
+import ThingTronicsLogo from "../images/thingtronics.jpeg";
+import VITLogo from "../images/vit-logo.jpeg";
 
 const experiences = [
   {
     id: 1,
     jobTitle: "Software Engineering Intern",
     company: "Copart Inc",
+    logo: CopartLogo,
     location: "Dallas, Texas",
     duration: "Jun 2023 - Present",
     duties: [
       "Working with the Auction Team, handling technical issues, enhancing auction and backend functionalities, and participating in code reviews.",
-      "Technologies worked on: Java, SpringBoot, AngularJS, Redis, NoSQL, Kafka",
+      "Technologies worked on: Java, SpringBoot, AngularJS, Redis, NoSQL, Kafka, Git, Jenkins",
     ],
   },
   {
     id: 2,
     jobTitle: "Student Developer",
     company: "Naveen Jindal School of Management",
+    logo: UTDLogo,
     location: "The University of Texas at Dallas",
     duration: "Apr 2023 - Jun 2023",
     duties: [
@@ -26,19 +33,21 @@ const experiences = [
   },
   {
     id: 3,
-    jobTitle: "Software Development Engineer, Intern",
+    jobTitle: "Software Engineering Intern",
     company: "NetApp Inc",
+    logo: NetAppLogo,
     location: "Bengaluru, Karnataka, India",
     duration: "Aug 2021 - Jul 2022",
     duties: [
       "Worked with the NFS team to develop NAS protocols such as NFS and CIFS, as well as projects to simplify protocol access.",
-      "Technologies worked on: Distributed Systems, Network-Attached Storage (NAS), C (Programming Language), C++, RESTful APIs, PyTest",
+      "Technologies worked on: Distributed Systems, Network-Attached Storage, C/C++, RESTful APIs, Kubernetes, Perforce",
     ],
   },
   {
     id: 4,
     jobTitle: "Android Engineer, Intern",
     company: "thingTronics Innovations",
+    logo: ThingTronicsLogo,
     location: "Bengaluru, Karnataka, India",
     duration: "May 2019 - Jun 2019",
     duties: [
@@ -50,6 +59,7 @@ const experiences = [
     id: 5,
     jobTitle: "Vice President",
     company: "Computer Society of India, VIT-AP",
+    logo: VITLogo,
     location: "Vellore Institute of Technology, AP",
     duration: "Jul 2018 - Sep 2021",
     duties: [
@@ -77,19 +87,21 @@ const Experiences = () => {
             className={`job ${selectedJob === experience.jobTitle ? "selected" : ""}`}
             onClick={() => handleJobClick(experience.jobTitle)}
           >
+            {/* <img src={experience.logo} alt={`${experience.company} Logo`} className="company-logo" /> */}
             <div className="job-title">{experience.jobTitle}</div>
             <div className="job-company">{experience.company}</div>
             <div className="job-location">{experience.location}</div>
             <div className="job-duration">{experience.duration}</div>
             {selectedJob === experience.jobTitle && (
-              <ul className="job-duties">
-              {experience.duties.map((duty, index) => (
-                <React.Fragment key={index}>
-                  {duty.includes("Technologies worked on:") && <hr className="hr-separator"/>}
-                  <li className={duty.includes("Technologies worked on:") ? "tech-list" : ""}>{duty}</li>
-                </React.Fragment>
-              ))}
-            </ul>
+              <div className="job-details">
+                <ul className="job-duties">
+                  {experience.duties.map((duty, index) => (
+                    <li key={index} className={!duty.includes("Technologies worked on:") ? "duty" : "tech"}>
+                      {duty}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             )}
           </div>
         ))}

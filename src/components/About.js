@@ -1,49 +1,35 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import portrait from "../images/self-portrait.png";
+import UTLogo from "../images/utd-logo.png";
+import VITLogo from "../images/vit-logo.jpeg";
 import "./About.css";
 
 const degrees = [
   {
     university: "The University of Texas at Dallas",
     degree: "Master of Science in Computer Science",
-    coursework: [
-      "Algorithm Analysis and Data Structures",
-      "Design and Analysis of Algorithms",
-      "Database Design",
-      "Statistics for Data Science",
-      "Machine Learning",
-      "Big Data Management and Analytics",
-      "Computer Graphics"
-    ],
-    achievements: [
-      "Jonsson School Dean’s Graduate Scholarship Recipient, 2022",
-    ],
+    year: "2022",
+    logo: UTLogo,
+    description: "Specialized in Data Science. Honored with Dean’s Scholarship for academic excellence."
   },
   {
     university: "Vellore Institute of Technology, Amaravati",
     degree: "Master of Technology in Software Engineering",
-    coursework: [
-      ""
-    ],
-    achievements: [
-      "Prof. Akella Sitaramam Endowment Award, 2022 - Best Student Award",
-      "Academic Achievement Award 2020-21",
-    ],
+    year: "2019",
+    logo: VITLogo,
+    description: (
+      <>
+        Honored with Dean's list for academic excellence. Completed a thesis project on 
+        <a href="https://journal.ijresm.com/index.php/ijresm/article/view/1732" target="_blank" rel="noopener noreferrer" style={{ color: "#ffc000" }}>
+        {" "}Abstractive Text Summarization.
+        </a>
+      </>
+    )
   },
 ];
 
 function About() {
-  const [selectedDegree, setSelectedDegree] = useState(null);
-
-  const handleDegreeClick = (index) => {
-    if (index === selectedDegree) {
-      setSelectedDegree(null);
-    } else {
-      setSelectedDegree(index);
-    }
-  };
-
   return (
     <section id="about" className="about">
       <div className="container">
@@ -68,8 +54,13 @@ function About() {
         <div className="education">
             <h2>Education</h2>
             {degrees.map((degree, index) => (
-                <div key={index} className="degree">
-                    <h3 style={{display: 'inline'}}>{degree.degree}</h3> - <b>{degree.university}</b>
+                <div key={index} className="degree-card">
+                    <img src={degree.logo} alt={`${degree.university} logo`} className="university-logo" />
+                    <div className="degree-info">
+                        <h3>{degree.degree}</h3>
+                        <p><b>{degree.university}</b> - {degree.year}</p>
+                        <p>{degree.description}</p>
+                    </div>
                 </div>
             ))}
         </div>

@@ -53,7 +53,6 @@ transition: all 0.3s ease-in-out;
 transform: scale(1.2);
 }
 
-/* Style degrees */
 .degree {
 margin-bottom: 20px;
 }
@@ -87,4 +86,30 @@ list-style: none;
 
 .details ul li {
 margin-bottom: 5px;
+}
+
+.degree-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+}
+
+.degree-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.university-logo {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.degree-info {
+    flex-grow: 1;
 }

@@ -37,6 +37,13 @@ border-radius: 5px;
 box-shadow: 0 0 1.5px #fff;
 background-color: #36454F;
 cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.tech {
+    padding-top: 10px;
+    font-style: italic; /* Italicize the technologies for distinction */
+    color: #fff; /* Slightly grayed out */
 }
 
 /* Styling for the job title */
