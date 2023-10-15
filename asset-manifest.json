@@ -1,14 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.501a6809.css",
-    "main.js": "/static/js/main.7f0e5007.js",
+    "main.css": "/static/css/main.bc358ff2.css",
+    "main.js": "/static/js/main.d1cfed12.js",
     "static/media/self-portrait.png": "/static/media/self-portrait.7fffac8b572a4ec04429.png",
+    "static/media/copart-logo.png": "/static/media/copart-logo.a9454a0ae35986986001.png",
+    "static/media/vit-logo.jpeg": "/static/media/vit-logo.a177a60d4ee6e46c8816.jpeg",
+    "static/media/utd-logo.png": "/static/media/utd-logo.b018d88f8199cdb71208.png",
+    "static/media/thingtronics.jpeg": "/static/media/thingtronics.b75f863f4c23eda91a58.jpeg",
     "index.html": "/index.html",
-    "main.501a6809.css.map": "/static/css/main.501a6809.css.map",
-    "main.7f0e5007.js.map": "/static/js/main.7f0e5007.js.map"
+    "main.bc358ff2.css.map": "/static/css/main.bc358ff2.css.map",
+    "main.d1cfed12.js.map": "/static/js/main.d1cfed12.js.map"
   },
   "entrypoints": [
-    "static/css/main.501a6809.css",
-    "static/js/main.7f0e5007.js"
+    "static/css/main.bc358ff2.css",
+    "static/js/main.d1cfed12.js"
   ]
 }
