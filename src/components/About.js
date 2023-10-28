@@ -9,14 +9,14 @@ const degrees = [
   {
     university: "The University of Texas at Dallas",
     degree: "Master of Science in Computer Science",
-    year: "2022",
+    year: "2022-23",
     logo: UTLogo,
     description: "Specialized in Data Science. Honored with Dean’s Scholarship for academic excellence."
   },
   {
     university: "Vellore Institute of Technology, Amaravati",
     degree: "Master of Technology in Software Engineering",
-    year: "2019",
+    year: "2017-22",
     logo: VITLogo,
     description: (
       <>
