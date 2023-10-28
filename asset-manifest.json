@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.bc358ff2.css",
-    "main.js": "/static/js/main.d1cfed12.js",
+    "main.js": "/static/js/main.58a259ab.js",
     "static/media/self-portrait.png": "/static/media/self-portrait.7fffac8b572a4ec04429.png",
     "static/media/copart-logo.png": "/static/media/copart-logo.a9454a0ae35986986001.png",
     "static/media/vit-logo.jpeg": "/static/media/vit-logo.a177a60d4ee6e46c8816.jpeg",
@@ -9,10 +9,10 @@
     "static/media/thingtronics.jpeg": "/static/media/thingtronics.b75f863f4c23eda91a58.jpeg",
     "index.html": "/index.html",
     "main.bc358ff2.css.map": "/static/css/main.bc358ff2.css.map",
-    "main.d1cfed12.js.map": "/static/js/main.d1cfed12.js.map"
+    "main.58a259ab.js.map": "/static/js/main.58a259ab.js.map"
   },
   "entrypoints": [
     "static/css/main.bc358ff2.css",
-    "static/js/main.d1cfed12.js"
+    "static/js/main.58a259ab.js"
   ]
 }
